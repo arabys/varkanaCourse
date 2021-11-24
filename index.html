@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Styles -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.0/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Document</title>
+</head>
+<body>
+
+    <div id="main">
+
+        <section id="header">
+
+            <div id="navbar">
+
+                <ul>
+                    <li><a href="#">صفحه اصلی</a></li>
+                    <li><a href="#services">خدمات ما</a></li>
+                    <li><a href="#portfolio">نمونه کار</a></li>
+                    <li><a href="#contact">تماس با ما</a></li>
+                    <li><a href="#about">درباره ما</a></li>
+                </ul>
+
+            </div>
+
+            <div id="headline">
+
+                <h1>شرکت برنامه نویسی وارکانا پردازش</h1>
+                <p>
+                    ارائه بهترین خدمات در طراحی و توسعه وب سایت و اپلیکیشن
+                </p>
+
+            </div>
+
+        </section>
+
+        <section id="services">
+
+            <div id="web" class="service-item" onclick="clicking(event)">
+                <img src="images/web.png" alt="" srcset="">
+                <h2>طراحی وب سایت</h2>
+            </div>
+            <div id="app" class="service-item" onclick="clicking(event)">
+                <img src="images/app.png" alt="" srcset="">
+                <h2>طراحی اپلیکیشن</h2>
+            </div>
+            <div id="seo" class="service-item" onclick="clicking(event)">
+                <img src="images/web.png" alt="" srcset="">
+                <h2>سئو سایت</h2>
+            </div>
+            <div id="instagram" class="service-item" onclick="clicking(event)">
+                <img src="images/app.png" alt="" srcset="">
+                <h2>تولید محتوا</h2>
+            </div>
+
+
+        </section>
+
+        <section id="portfolio">
+
+            <span id="arrowNext" class="arrow arrow-next" onclick="slide_next()"><i class="bi bi-arrow-right-circle"></i></span>
+          <div class="slides-container" id="slidesContainer" onload="move_next()">
+
+            <div id="slide-1" class="portfolio-item">
+                <h3 class="card-title">پروژه های ما</h3>
+                <h1 id="card-digit-1" id="card-digit-" class="card-digits">0</h1>
+                <p class="card-description">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ</p>
+
+            </div>
+            <div id="slide-2" class="portfolio-item">
+                <h3 class="card-title">پروژه های ما</h3>
+                <h1 id="card-digit-2" class="card-digits">0</h1>
+                <p class="card-description">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ</p>
+
+            </div>
+            <div id="slide-3" class="portfolio-item">
+                
+                <h3 class="card-title">پروژه های ما</h3>
+                <h1 id="card-digit-3" class="card-digits">0</h1>
+                <p class="card-description">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ</p>
+
+            </div>
+            <div id="slide-4" class="portfolio-item">
+
+                <h3 class="card-title">پروژه های ما</h3>
+                <h1 id="card-digit-4" class="card-digits">0</h1>
+                <p class="card-description">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ</p>
+
+            </div>
+            <div id="slide-5" class="portfolio-item">
+                
+                <h3 class="card-title">پروژه های ما</h3>
+                <h1 id="card-digit-5" class="card-digits">0</h1>
+                <p class="card-description">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ</p>
+
+            </div>
+            <div id="slide-6" class="portfolio-item">
+
+                <h3 class="card-title">پروژه های ما</h3>
+                <h1 id="card-digit-6" class="card-digits">0</h1>
+                <p class="card-description">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ</p>
+
+            </div>
+            <div id="slide-7" class="portfolio-item">
+                <h3 class="card-title">پروژه های ما</h3>
+                <h1 id="card-digit-7" class="card-digits">0</h1>
+                <p class="card-description">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ</p>
+
+            </div>
+            <div id="slide-8" class="portfolio-item">
+                <h3 class="card-title">پروژه های ما</h3>
+                <h1 id="card-digit-8" class="card-digits">0</h1>
+                <p class="card-description">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ</p>
+
+            </div>
+            <div id="slide-9" class="portfolio-item">
+                <h3 class="card-title">پروژه های ما</h3>
+                <h1 id="card-digit-9" class="card-digits">0</h1>
+                <p class="card-description">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ</p>
+
+            </div>
+        
+          </div>
+           
+            <span id="arrowPrevius" class="arrow arrow-previus" onclick="slide_previus()"><i class="bi bi-arrow-left-circle"></i></span>
+
+        </section>
+        <section id="clients-bar" >
+            <div class="client-item">
+                <img src="images/clients/client2.png" alt="" srcset="">
+            </div>
+            <div class="client-item">
+                <img src="images/clients/client4.png" alt="" srcset="">
+            </div>
+            <div class="client-item">
+                <img src="images/clients/client3.png" alt="" srcset="">
+            </div>
+            <div class="client-item">
+                <img src="images/clients/client4.png" alt="" srcset="">
+            </div>
+            <div class="client-item">
+                <img src="images/clients/client5.png" alt="" srcset="">
+            </div>
+        </section>
+        <section id="contact-us-wrapper">
+            <h1 id="contact-us-title" >ارتباط با ما</h1>
+            <div class="contact-us">
+                <img src="./images/contactus.jpg" alt="" srcset="">
+
+                <form onsubmit="post_data(event)">
+                    <div class="messages" id="message"></div>
+                    <input type="email" name="email" placeholder="test@gmail.com" dir="ltr" required>
+                    <textarea name="message" cols="10" rows="3" placeholder="پیام شما..." required></textarea>
+                    <input type="submit" value="ارسال">
+                </form>
+            </div>
+        </section>
+
+        <section id="success-projects">
+
+        </section>
+
+        <section id="footer">
+
+        </section>
+
+    </div>
+
+    <!-- Scripts -->
+    <script src="js/main.js"></script>
+</body>
+</html>
